@@ -1,0 +1,21 @@
+.navbarContainer {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 50px;
+  border-bottom: 1px solid var(--secondColor);
+  align-items: flex-end;
+  color: var(--mainColor);
+}
+
+.hyperlink {
+  text-decoration: none;
+  font-weight: bolder;
+  color: var(--mainColor);
+}
+
+@media (max-width: 640px) {
+  .navbarContainer > span {
+    display: none;
+  }
+}

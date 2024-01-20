@@ -1,0 +1,10 @@
+.container {
+  display: flex;
+  background-color: #232a38;
+  color: var(--secondColor);
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  cursor: not-allowed;
+  user-select: none;
+}

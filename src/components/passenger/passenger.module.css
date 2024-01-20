@@ -1,0 +1,73 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  background-color: #232a38;
+  cursor: pointer;
+}
+
+.countPosition {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--secondColor);
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+  padding-left: 25px;
+}
+
+.iconContainer > svg {
+  color: white;
+  height: 40px;
+}
+
+.menu {
+  background: #ffffff;
+  border: 8px solid #fffefe;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+  float: left;
+  position: absolute;
+  margin: 0;
+  top: 100%;
+  width: 250px;
+  z-index: 99999;
+  margin-top: 18px;
+  color: #767373c2;
+  cursor: default;
+}
+
+.menu:after {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: -17px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 17px 17px 17px;
+  border-color: transparent transparent #ffffff transparent;
+  z-index: 9998;
+}
+
+.menuSelection {
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 14px;
+  display: flex;
+  gap: 15px;
+}
+
+.menuPassenger {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}

@@ -1,0 +1,38 @@
+.roundedToggleSwitch {
+  position: relative;
+  display: flex;
+  cursor: pointer;
+}
+
+.roundedToggleSwitch label {
+  margin-right: 8px;
+  font-weight: bold;
+}
+
+.roundedToggleSwitch .slider {
+  position: relative;
+  width: 40px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 15px;
+  transition: background-color 0.5s;
+  padding: 0 3px;
+}
+
+.roundedToggleSwitch.checked .slider {
+  background-color: #2196f3;
+}
+
+.roundedToggleSwitch .slider:before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.4s;
+}
+
+.roundedToggleSwitch.checked .slider:before {
+  transform: translateX(20px);
+}

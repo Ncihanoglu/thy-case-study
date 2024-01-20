@@ -1,0 +1,89 @@
+.header {
+  background-color: #242a38;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  padding-right: 5px;
+  color: var(--secondColor);
+}
+
+.tableContainer {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 10px;
+  padding: 10px 0;
+  background-color: var(--secondColor);
+  width: 100%;
+}
+
+.listItemWrapper {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 3fr 2fr 2fr;
+  padding: 0 5px;
+}
+
+.flightTimeContainer {
+  display: flex;
+  padding: 0 10px;
+  gap: 25px;
+}
+
+.flightTimeCity {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flightPriceContainer {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.currency {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+}
+
+.fareDetails {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  padding: 0 5px;
+}
+
+.subCategoryHeader {
+  background-color: #f4f5f9;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.subCategoryContent {
+  border: 1px solid #edefee;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(100% - 60px);
+}
+
+.selectionButton {
+  font-weight: bold;
+  color: var(--secondColor);
+  background-color: #ff0000;
+  border: none;
+  height: 50px;
+}
+
+.selectionButton:disabled {
+  background-color: #d9e0e7;
+}

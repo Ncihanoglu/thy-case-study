@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+  flex-direction: column;
+}
+
+.sectionHeader {
+  text-align: center;
+  color: var(--secondColor);
+  font-size: 20px;
+}
+
+.bookingContainer {
+  border: 15px solid rgb(96 105 119 / 60%);
+  /* background-color: #3c5166;*/
+  background-color: rgb(96 105 119 / 60%);
+  gap: 5px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  grid-template-columns: 180px 180px 100px 150px 50px;
+}
+
+.buttonContainer {
+  background-color: #ff0000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .bookingContainer {
+    border: 10px solid #3c5166;
+    background-color: #3c5166;
+    gap: 5px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(5, 100px);
+    width: 250px;
+    grid-template-columns: initial;
+  }
+}

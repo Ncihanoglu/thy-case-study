@@ -1,0 +1,15 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.container > button {
+  background-color: #eaeeef;
+  border: none;
+  color: #8e9293;
+  padding: 10px;
+  font-weight: bolder;
+  font-size: 17px;
+}
